@@ -1,0 +1,22 @@
+{
+  "name": "livereload-simple-server",
+  "version": "1.0.0",
+  "description": "A simple livereload server that can use an rc file",
+  "main": "bin/livereload-simple-server.js",
+  "bin": {
+    "livereload-simple-server": "./bin/livereload-simple-server.js"
+  },
+  "scripts": {
+    "test": "standard index.js"
+  },
+  "keywords": [],
+  "author": "Evo Stamatov <aviolito@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "livereload": "^0.4.1",
+    "rc": "^1.1.6"
+  },
+  "devDependencies": {
+    "standard": "^6.0.8"
+  }
+}
