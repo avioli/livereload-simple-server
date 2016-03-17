@@ -54,3 +54,9 @@ or
 ~ $ cd /path/to-watch
 /path/to-watch $ livereload-simple-server --watch=./subdir/to-watch --watch=./another/dir/to-watch --extAddon=ts --extAddons=XYZ
 ```
+
+## Install
+
+```
+npm install -g avioli/livereload-simple-server
+```
