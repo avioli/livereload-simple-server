@@ -36,7 +36,8 @@ var server = livereload.createServer({
 
 appCfg.debug || console.log('LiveReload server started.')
 console.log('Use this snippet in your website:')
-console.log(`<script>document.write('<script src="http://'+(location.host||'localhost').split(':')[0]+':${appCfg.port}/livereload.js?snipver=1"></'+'script>')</script>`)
+appCfg.wp && console.log(`wp_enqueue_script( 'livereload', '//localhost:${appCfg.port}/livereload.js?snipver=1', array(), false, false );`)
+appCfg.wp || console.log(`<script>document.write('<script src="http://'+(location.host||'localhost').split(':')[0]+':${appCfg.port}/livereload.js?snipver=1"></'+'script>')</script>`)
 
 var paths = appCfg.watch
 if (paths === '.') {
